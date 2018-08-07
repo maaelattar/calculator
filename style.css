@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Agency FB', arial;
+}
+
+div#container {
+  margin: 0 auto;
+}
+
+div#calculator {
+  background: radial-gradient(#EBEAF0, #EFEEF4);
+  border: 1px solid #B8B6BF;
+  height: 480px;
+  width: 350px;
+  margin: 0 auto;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+div#upper {
+  height: 50px;
+  font-size: 2rem;
+  border: 3px solid grey;
+}
+
+div#title {
+  width: 45%;
+  display: inline-block;
+  float: left;
+  line-height: 50px;
+  margin-left: 7px;
+}
+
+div#solar {
+  display: inline-block;
+  height: 30px;
+  width: 45%;
+  background: #4C4343;
+  margin-top: 7px;
+}
+
+div#screen {
+  height: 80px;
+  width: 100%;
+  background: #CFE3E4;
+  overflow: hidden;
+  padding: 6px;
+  box-shadow: 1px 1px 1px 1px inset;
+}
+
+div#screen_input {
+  height: 35px;
+  vertical-align: middle;
+  line-height: 45px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+div#screen_output {
+  height: 35px;
+  text-align: right;
+  vertical-align: middle;
+  line-height: 45px;
+}
+
+div#buttons {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 6px;
+}
+
+div.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 20%;
+  width: 100%;
+}
+
+button.button {
+  display: inline-block;
+  height: 60px;
+  width: 70px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  box-shadow: 1 1px grey;
+  border: none;
+  outline: none;
+  border-radius: 70px;
+  color: #eee;
+  font-size: 1rem;
+  box-shadow: 1px 1px 1px 1px #E2E1E7;
+  transition: .1s;
+}
+
+button.button:hover, .active {
+  filter: brightness(85%);
+}
+
+button.operand {
+  background: #0097A7;
+}
+
+button.operator {
+  background: #E64A19;
+}
+
+button.clear {
+  background: #536DFE;
+}
+
+button.backspace {
+  background: #CDDC39;
+}
+
+button.equal {
+  background: #512DA8;
+}
+
+div#developer {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #E64A19;
+}
